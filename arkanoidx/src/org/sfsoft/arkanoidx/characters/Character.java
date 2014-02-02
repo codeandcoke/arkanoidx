@@ -3,6 +3,12 @@ package org.sfsoft.arkanoidx.characters;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+/**
+ * Clase base para todos los caracteres del juego
+ * @author Santiago Faci
+ * @version 1.0
+ *
+ */
 public abstract class Character {
 
 	Texture texture;

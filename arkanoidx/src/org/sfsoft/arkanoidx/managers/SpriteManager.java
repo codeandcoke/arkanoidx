@@ -8,6 +8,12 @@ import org.sfsoft.arkanoidx.util.Constants;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.Array;
 
+/**
+ * Clase que gestiona los sprites del juego
+ * @author Santiago Faci
+ * @version 1.0
+ *
+ */
 public class SpriteManager {
 
 	public Board player;

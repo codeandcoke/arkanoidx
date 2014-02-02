@@ -4,6 +4,12 @@ import org.sfsoft.arkanoidx.util.Constants;
 
 import com.badlogic.gdx.graphics.Texture;
 
+/**
+ * Clase que representa la tabla del jugador
+ * @author Santiago Faci
+ * @version 1.0
+ *
+ */
 public class Board extends Character {
 
 	int lives;
@@ -13,6 +19,7 @@ public class Board extends Character {
 		this.lives = lives;
 	}
 	
+	// Desplaza la tabla en el eje x
 	public void move(float x) {
 		
 		this.x += x;
@@ -21,6 +28,7 @@ public class Board extends Character {
 	@Override
 	public void update(float dt) {
 		
+		// Comprueba los límites de la pantalla
 		if (x <= 0)
 			x = 0;
 		

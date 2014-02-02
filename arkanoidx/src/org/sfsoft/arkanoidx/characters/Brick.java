@@ -2,8 +2,15 @@ package org.sfsoft.arkanoidx.characters;
 
 import com.badlogic.gdx.graphics.Texture;
 
+/**
+ * Clase que representa a cada uno de los ladrillos del juego
+ * @author Santiago Faci
+ * @version
+ *
+ */
 public class Brick extends Character {
 
+	// Tipo de ladrillo
 	public enum BrickType {
 		YELLOW, BLACK, GREEN, WHITE, PURPLE, RED, BLUE, GRAY
 	}
