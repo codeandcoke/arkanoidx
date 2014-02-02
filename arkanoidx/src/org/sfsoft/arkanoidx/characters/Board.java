@@ -13,10 +13,15 @@ import com.badlogic.gdx.graphics.Texture;
 public class Board extends Character {
 
 	int lives;
+	public enum State {
+		RIGHT, LEFT, IDLE;
+	}
+	public State state;
 	
 	public Board(Texture texture, float x, float y, int lives) {
 		super(texture, x, y);
 		this.lives = lives;
+		state = State.IDLE;
 	}
 	
 	// Desplaza la tabla en el eje x
@@ -27,6 +32,8 @@ public class Board extends Character {
 	
 	@Override
 	public void update(float dt) {
+		
+		super.update(dt);
 		
 		// Comprueba los límites de la pantalla
 		if (x <= 0)

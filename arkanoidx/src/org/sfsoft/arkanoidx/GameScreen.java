@@ -2,6 +2,7 @@ package org.sfsoft.arkanoidx;
 
 import java.util.Iterator;
 
+import org.sfsoft.arkanoidx.characters.Board;
 import org.sfsoft.arkanoidx.managers.LevelManager;
 import org.sfsoft.arkanoidx.managers.ResourceManager;
 import org.sfsoft.arkanoidx.managers.SpriteManager;
@@ -44,9 +45,9 @@ public class GameScreen implements Screen, InputProcessor {
 			
 		ResourceManager.loadAllResources();
 		
-		levelManager = new LevelManager();
-		levelManager.loadCurrentLevel();
 		spriteManager = new SpriteManager(game.spriteBatch);
+		levelManager = new LevelManager(spriteManager);
+		levelManager.loadCurrentLevel();
 		
 		Gdx.input.setInputProcessor(this);
 	}
@@ -86,11 +87,19 @@ public class GameScreen implements Screen, InputProcessor {
 	private void handleInput(float dt) {
 		
 		if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
-			spriteManager.player.move(Constants.BOARD_SPEED * dt);
+			spriteManager.board.move(Constants.BOARD_SPEED * dt);
+			spriteManager.board.state = Board.State.RIGHT;
+		}
+		else if (Gdx.input.isKeyPressed(Keys.LEFT)) {
+			spriteManager.board.move(-Constants.BOARD_SPEED * dt);
+			spriteManager.board.state = Board.State.LEFT;
+		}
+		else {
+			spriteManager.board.state = Board.State.IDLE;
 		}
 		
-		if (Gdx.input.isKeyPressed(Keys.LEFT)) {
-			spriteManager.player.move(-Constants.BOARD_SPEED * dt);
+		if (Gdx.input.isKeyPressed(Keys.SPACE)) {
+			spriteManager.ball.setPaused(false);
 		}
 	}
 

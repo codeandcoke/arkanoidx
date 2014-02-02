@@ -19,6 +19,15 @@ public class Brick extends Character {
 	int lives;
 	int value;
 	
+	/**
+	 * Constructor
+	 * @param texture Textura del ladrillo
+	 * @param x Posición x inicial
+	 * @param y Posición y inicial
+	 * @param type Tipo de ladrillo
+	 * @param lives Duración del ladrillo (golpes)
+	 * @param value Puntuación que da romper el ladrillo
+	 */
 	public Brick(Texture texture, float x, float y, BrickType type, int lives, int value) {
 		
 		super(texture, x, y);
@@ -30,5 +39,6 @@ public class Brick extends Character {
 	@Override
 	public void update(float dt) {
 		
+		super.update(dt);
 	}
 }
