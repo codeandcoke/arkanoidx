@@ -20,7 +20,7 @@ public class Arkanoidx extends Game {
 	BitmapFont fuente;
 	
 	/*
-	 * M�todo invocado en el momento de crearse la aplicaci�n
+	 * Método invocado en el momento de crearse la aplicación
 	 * @see com.badlogic.gdx.ApplicationListener#create()
 	 */
 	@Override
