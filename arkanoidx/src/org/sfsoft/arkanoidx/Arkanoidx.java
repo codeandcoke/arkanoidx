@@ -18,6 +18,7 @@ public class Arkanoidx extends Game {
 	public OrthographicCamera camera;
 	SpriteBatch spriteBatch;
 	BitmapFont fuente;
+	int gotasRecogidas;
 	
 	/*
 	 * Método invocado en el momento de crearse la aplicación
@@ -28,7 +29,7 @@ public class Arkanoidx extends Game {
 		spriteBatch = new SpriteBatch();
 		fuente = new BitmapFont();
 		
-		// Crea la c�mara y define la zona de visi�n del juego (toda la pantalla)
+		// Crea la cámara y define la zona de visión del juego (toda la pantalla)
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 		camera.update();
@@ -37,8 +38,8 @@ public class Arkanoidx extends Game {
 	}
 
 	/*
-	 * M�todo que se invoca cada vez que hay que renderizar
-	 * Es el m�todo donde se actualiza tambi�n la l�gica del juego
+	 * Método que se invoca cada vez que hay que renderizar
+	 * Es el método donde se actualiza tambi�n la lógica del juego
 	 * @see com.badlogic.gdx.ApplicationListener#pause()
 	 */
 	@Override
@@ -47,7 +48,7 @@ public class Arkanoidx extends Game {
 	}
 	
 	/*
-	 * M�todo invocado cuando se destruye la aplicaci�n
+	 * Método invocado cuando se destruye la aplicación
 	 * Siempre va precedido de una llamada a 'pause()'
 	 * @see com.badlogic.gdx.ApplicationListener#dispose()
 	 */
