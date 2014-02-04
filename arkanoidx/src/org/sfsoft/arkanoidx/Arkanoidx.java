@@ -18,12 +18,7 @@ public class Arkanoidx extends Game {
 	public OrthographicCamera camera;
 	SpriteBatch spriteBatch;
 	BitmapFont fuente;
-	int gotasRecogidas;
 	
-	/*
-	 * Método invocado en el momento de crearse la aplicación
-	 * @see com.badlogic.gdx.ApplicationListener#create()
-	 */
 	@Override
 	public void create() {
 		spriteBatch = new SpriteBatch();
@@ -37,26 +32,14 @@ public class Arkanoidx extends Game {
 		setScreen(new MainMenuScreen(this));
 	}
 
-	/*
-	 * Método que se invoca cada vez que hay que renderizar
-	 * Es el método donde se actualiza tambi�n la lógica del juego
-	 * @see com.badlogic.gdx.ApplicationListener#pause()
-	 */
 	@Override
 	public void render() {
 		super.render();
 	}
 	
-	/*
-	 * Método invocado cuando se destruye la aplicación
-	 * Siempre va precedido de una llamada a 'pause()'
-	 * @see com.badlogic.gdx.ApplicationListener#dispose()
-	 */
 	@Override
 	public void dispose() {
 		spriteBatch.dispose();
 		fuente.dispose();
 	}
-	
-	
 }
