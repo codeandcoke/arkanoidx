@@ -13,12 +13,12 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 public class DesktopArkanoidx {
 
 	public static void main(String[] args) {
-		LwjglApplicationConfiguration configuracion = new LwjglApplicationConfiguration();
-		configuracion.title = "Arkanoidx";
+		LwjglApplicationConfiguration configuration = new LwjglApplicationConfiguration();
+		configuration.title = "Arkanoidx";
 
-		configuracion.width = Constants.SCREEN_WIDTH;
-		configuracion.height = Constants.SCREEN_HEIGHT;
+		configuration.width = Constants.SCREEN_WIDTH;
+		configuration.height = Constants.SCREEN_HEIGHT;
 				
-		new LwjglApplication(new Arkanoidx(), configuracion);
+		new LwjglApplication(new Arkanoidx(), configuration);
 	}
 }
