@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
  * Clase principal del proyecto principal del juego
  * 
  * @author Santiago Faci
+ * @version 1.0
  *
  */
 public class Arkanoidx extends Game {
