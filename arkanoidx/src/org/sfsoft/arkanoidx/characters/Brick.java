@@ -22,11 +22,11 @@ public class Brick extends Character {
 	/**
 	 * Constructor
 	 * @param texture Textura del ladrillo
-	 * @param x Posici髇 x inicial
-	 * @param y Posici髇 y inicial
+	 * @param x Posici贸n x inicial
+	 * @param y Posici贸n y inicial
 	 * @param type Tipo de ladrillo
-	 * @param lives Duraci髇 del ladrillo (golpes)
-	 * @param value Puntuaci髇 que da romper el ladrillo
+	 * @param lives Duraci贸n del ladrillo (golpes)
+	 * @param value Puntuaci贸n que da romper el ladrillo
 	 */
 	public Brick(Texture texture, float x, float y, BrickType type, int lives, int value) {
 		
