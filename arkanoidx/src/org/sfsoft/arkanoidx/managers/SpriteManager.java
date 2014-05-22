@@ -21,6 +21,7 @@ public class SpriteManager {
 	public Array<Brick> bricks;
 	
 	SpriteBatch batch;
+    LevelManager levelManager;
 	
 	public SpriteManager(SpriteBatch batch) {
 		
@@ -30,6 +31,10 @@ public class SpriteManager {
 		ball = new Ball(ResourceManager.getTexture("ball"), Constants.SCREEN_WIDTH / 2, 250, this);
 		bricks = new Array<Brick>();
 	}
+
+    public void setLevelManager(LevelManager levelManager) {
+        this.levelManager = levelManager;
+    }
 	
 	public void render() {
 		
@@ -47,5 +52,12 @@ public class SpriteManager {
 		ball.update(dt);
 		for (Brick brick : bricks)
 			brick.update(dt);
+
+        if (levelIsOver())
+            levelManager.passToNextLevel();
 	}
+
+    private boolean levelIsOver() {
+        return (bricks.size == 0);
+    }
 }

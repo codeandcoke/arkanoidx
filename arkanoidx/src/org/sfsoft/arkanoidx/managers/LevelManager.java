@@ -53,6 +53,14 @@ public class LevelManager {
 			y -= Constants.BRICK_HEIGHT;
 		}
 	}
+
+    /**
+     * Carga el siguiente nivel
+     */
+    public void passToNextLevel() {
+        currentLevel++;
+        loadCurrentLevel();
+    }
 	
 	/**
 	 * Obtiene la textura que corresponde con el tipo de ladrillo dado

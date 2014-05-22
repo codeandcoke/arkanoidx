@@ -34,7 +34,7 @@ public class GameScreen implements Screen, InputProcessor {
 
 	final Arkanoidx game;
 	
-	// Indica si el juego está en pausa
+	// Indica si el juego estÃ¡ en pausa
 	boolean paused = false;
 	
 	LevelManager levelManager;
@@ -48,6 +48,7 @@ public class GameScreen implements Screen, InputProcessor {
 		spriteManager = new SpriteManager(game.spriteBatch);
 		levelManager = new LevelManager(spriteManager);
 		levelManager.loadCurrentLevel();
+        spriteManager.setLevelManager(levelManager);
 		
 		Gdx.input.setInputProcessor(this);
 	}
@@ -66,11 +67,11 @@ public class GameScreen implements Screen, InputProcessor {
 		// Limpia la pantalla
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		
-		// Actualiza la cámara
+		// Actualiza la cï¿½mara
 		game.camera.update();
 		
 		/* Comprueba la entrada del usuario, actualiza
-		 * la posición de los elementos del juego y
+		 * la posiciï¿½n de los elementos del juego y
 		 * dibuja en pantalla
 		 */
 		if (!paused) {
@@ -82,7 +83,7 @@ public class GameScreen implements Screen, InputProcessor {
 	}
 	
 	/*
-	 * Comprueba la entrada del usuario (teclado o pantalla si está en el móvil)
+	 * Comprueba la entrada del usuario (teclado o pantalla si estï¿½ en el mï¿½vil)
 	 */
 	private void handleInput(float dt) {
 		
@@ -104,7 +105,7 @@ public class GameScreen implements Screen, InputProcessor {
 	}
 
 	/*
-	 * Método que se invoca cuando está pantalla
+	 * Mï¿½todo que se invoca cuando estï¿½ pantalla
 	 * deja de ser la principal
 	 * @see com.badlogic.gdx.Screen#hide()
 	 */

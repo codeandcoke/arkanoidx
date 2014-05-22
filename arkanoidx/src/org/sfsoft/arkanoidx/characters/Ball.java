@@ -46,11 +46,11 @@ public class Ball extends Character {
 		if (paused)
 			return;
 		
-		// Actualiza posición de la bola
+		// Actualiza posiciÃ³n de la bola
 		x += speedX * dt;
 		y += speedY * dt;
 		
-		// Comprueba los límites de la pantalla (
+		// Comprueba los lÃ­mites de la pantalla (
 		// Rebote en parte izquierda
 		if (x <= 0) {
 			x = 0;
@@ -73,7 +73,7 @@ public class Ball extends Character {
 		Board board = spriteManager.board; 
 		if (board.rect.overlaps(rect)) {
 			
-			// Si la tabla está en movimiento puede alterar la dirección X de la bola
+			// Si la tabla estï¿½ en movimiento puede alterar la direcciï¿½n X de la bola
 			if (board.state == Board.State.LEFT) {
 				speedX = -BALL_SPEED;
 			}
@@ -86,7 +86,7 @@ public class Ball extends Character {
 		}
 		
 		// Rebote con ladrillos
-		// FIXME Falta comprobar cómo podemos hacer que rebote de lado en un ladrillo
+		// FIXME Falta comprobar cÃ³mo hacer que rebote de lado en un ladrillo
 		for (Brick brick : spriteManager.bricks) {
 			if (brick.rect.overlaps(rect)) {
 				
