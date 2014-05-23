@@ -47,7 +47,7 @@ public class GameScreen implements Screen, InputProcessor {
 		
 		spriteManager = new SpriteManager(game.spriteBatch);
 		levelManager = new LevelManager(spriteManager);
-		levelManager.loadCurrentLevel();
+        levelManager.loadCurrentLevel();
         spriteManager.setLevelManager(levelManager);
 		
 		Gdx.input.setInputProcessor(this);
@@ -67,7 +67,7 @@ public class GameScreen implements Screen, InputProcessor {
 		// Limpia la pantalla
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		
-		// Actualiza la c�mara
+		// Actualiza la cámara
 		game.camera.update();
 		
 		/* Comprueba la entrada del usuario, actualiza
