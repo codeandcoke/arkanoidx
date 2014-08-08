@@ -1,0 +1,75 @@
+
+arkanoidx.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+board
+  rotate: false
+  xy: 1, 15
+  size: 60, 15
+  orig: 60, 15
+  offset: 0, 0
+  index: -1
+white_brick
+  rotate: false
+  xy: 63, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+black_brick
+  rotate: false
+  xy: 110, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+red_brick
+  rotate: false
+  xy: 157, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+blue_brick
+  rotate: false
+  xy: 204, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+gray_brick
+  rotate: false
+  xy: 251, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+yellow_brick
+  rotate: false
+  xy: 298, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+purple_brick
+  rotate: false
+  xy: 345, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+green_brick
+  rotate: false
+  xy: 392, 7
+  size: 45, 23
+  orig: 45, 23
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 1, 1
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
