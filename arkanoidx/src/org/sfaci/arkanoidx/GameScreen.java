@@ -32,7 +32,7 @@ public class GameScreen implements Screen, InputProcessor {
 			
 		ResourceManager.loadAllResources();
 		
-		spriteManager = new SpriteManager(game.spriteBatch);
+		spriteManager = new SpriteManager(game);
 		levelManager = new LevelManager(spriteManager);
         levelManager.loadCurrentLevel();
         spriteManager.setLevelManager(levelManager);
@@ -42,8 +42,6 @@ public class GameScreen implements Screen, InputProcessor {
 	
 	@Override
 	public void show() {
-		// TODO Auto-generated method stub
-		
 	}
 	
 	@Override

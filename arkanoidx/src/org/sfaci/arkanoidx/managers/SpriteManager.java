@@ -1,5 +1,7 @@
 package org.sfaci.arkanoidx.managers;
 
+import org.sfaci.arkanoidx.Arkanoidx;
+import org.sfaci.arkanoidx.GameOverScreen;
 import org.sfaci.arkanoidx.characters.Ball;
 import org.sfaci.arkanoidx.characters.Board;
 import org.sfaci.arkanoidx.characters.Brick;
@@ -21,19 +23,25 @@ public class SpriteManager {
 	public Array<Brick> bricks;
 	
 	SpriteBatch batch;
+    Arkanoidx game;
     LevelManager levelManager;
 	
-	public SpriteManager(SpriteBatch batch) {
+	public SpriteManager(Arkanoidx game) {
 		
-		this.batch = batch;
+		batch = game.spriteBatch;
+        this.game = game;
 		
-		board = new Board(ResourceManager.getAtlas().findRegion("board"), 0, 0, 3);
-		ball = new Ball(ResourceManager.getAtlas().findRegion("ball"), Constants.SCREEN_WIDTH / 2, 250, this);
-		bricks = new Array<Brick>();
+		init();
 	}
 
     public void setLevelManager(LevelManager levelManager) {
         this.levelManager = levelManager;
+    }
+
+    public void init() {
+        board = new Board(ResourceManager.getAtlas().findRegion("board"), 0, 0, 3);
+        ball = new Ball(ResourceManager.getAtlas().findRegion("ball"), Constants.SCREEN_WIDTH / 2, 250, this);
+        bricks = new Array<Brick>();
     }
 	
 	public void render() {
@@ -52,6 +60,21 @@ public class SpriteManager {
 		ball.update(dt);
 		for (Brick brick : bricks)
 			brick.update(dt);
+
+        /*
+         La pelota llega al suelo.
+         Si quedan vidas se reinicia el nivel
+         Si no quedan vidas se termina la partida
+         */
+        if (ball.position.y < 0) {
+            if (board.lives > 0) {
+                board.lives--;
+                levelManager.restartCurrentLevel();
+            }
+            else {
+                game.setScreen(new GameOverScreen(game));
+            }
+        }
 
         if (levelIsOver())
             levelManager.passToNextLevel();

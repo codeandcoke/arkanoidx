@@ -3,6 +3,7 @@ package org.sfaci.arkanoidx.characters;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector2;
 
 /**
  * Clase base para todos los caracteres del juego
@@ -13,26 +14,24 @@ import com.badlogic.gdx.math.Rectangle;
 public abstract class Character {
 
 	TextureRegion texture;
-	float x;
-	float y;
+    public Vector2 position;
 	Rectangle rect;
 	
 	public Character(TextureRegion texture, float x, float y) {
 		this.texture = texture;
-		this.x = x;
-		this.y = y;
+        position = new Vector2(x, y);
 		rect = new Rectangle(x, y, texture.getRegionWidth(), texture.getRegionHeight());
 	}
 	
 	public void render(SpriteBatch batch) {
 		
-		batch.draw(texture, x, y);
+		batch.draw(texture, position.x, position.y);
 	}
 	
 	public void update(float dt) {
 		
 		// Actualiza la posición del rectángulo
-		rect.x = x;
-		rect.y = y;
+		rect.x = position.x;
+		rect.y = position.y;
 	};
 }

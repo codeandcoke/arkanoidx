@@ -26,7 +26,7 @@ public class ResourceManager {
 		
 		Texture.setEnforcePotImages(false);
 
-        atlas = new TextureAtlas(Gdx.files.internal("pictures/org.sfaci.arkanoidx.pack"));
+        atlas = new TextureAtlas(Gdx.files.internal("pictures/arkanoidx.pack"));
 	}
 
     public static TextureAtlas getAtlas() {

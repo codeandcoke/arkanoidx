@@ -1,6 +1,7 @@
 package org.sfaci.arkanoidx.managers;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.utils.Array;
 import org.sfaci.arkanoidx.characters.Brick;
 import org.sfaci.arkanoidx.characters.Brick.BrickType;
 import org.sfaci.arkanoidx.util.Constants;
@@ -53,6 +54,15 @@ public class LevelManager {
 			y -= Constants.BRICK_HEIGHT;
 		}
 	}
+
+    /**
+     * Reinicia el nivel actual
+     */
+    public void restartCurrentLevel() {
+
+        spriteManager.init();
+        loadCurrentLevel();
+    }
 
     /**
      * Carga el siguiente nivel

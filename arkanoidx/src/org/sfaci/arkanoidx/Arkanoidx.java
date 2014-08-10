@@ -17,7 +17,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class Arkanoidx extends Game {
 
 	public OrthographicCamera camera;
-	SpriteBatch spriteBatch;
+	public SpriteBatch spriteBatch;
 	BitmapFont fuente;
 	
 	@Override

@@ -2,12 +2,8 @@ package org.sfaci.arkanoidx.characters;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import org.sfaci.arkanoidx.managers.SpriteManager;
-import static org.sfaci.arkanoidx.util.Constants.BALL_WIDTH;
-import static org.sfaci.arkanoidx.util.Constants.BALL_SPEED;
-import static org.sfaci.arkanoidx.util.Constants.SCREEN_WIDTH;
-import static org.sfaci.arkanoidx.util.Constants.SCREEN_HEIGHT;
-import static org.sfaci.arkanoidx.util.Constants.BOARD_HEIGHT;
-import static org.sfaci.arkanoidx.util.Constants.BRICK_HEIGHT;
+
+import static org.sfaci.arkanoidx.util.Constants.*;
 
 /**
  * Clase que representa la bola
@@ -39,40 +35,41 @@ public class Ball extends Character {
 	
 	@Override
 	public void update(float dt) {
-		
-		super.update(dt);
-		
+
+        // Si el juego está en pause la pelota no hace nada (se quedará parada)
 		if (paused)
 			return;
 		
 		// Actualiza posición de la bola
-		x += speedX * dt;
-		y += speedY * dt;
+		position.x += speedX * dt;
+		position.y += speedY * dt;
+
+        super.update(dt);
 		
 		// Comprueba los límites de la pantalla (
 		// Rebote en parte izquierda
-		if (x <= 0) {
-			x = 0;
+		if (position.x <= 0) {
+			position.x = 0;
 			speedX = -speedX;
 		}
 			
 		// Rebote en parte derecha
-		if ((x + BALL_WIDTH) >= SCREEN_WIDTH) {
-			x = SCREEN_WIDTH - BALL_WIDTH;
+		if ((position.x + BALL_WIDTH) >= SCREEN_WIDTH) {
+			position.x = SCREEN_WIDTH - BALL_WIDTH;
 			speedX = -speedX;
 		}
 		
 		// Rebote en el techo
-		if ((y + BALL_WIDTH) >= SCREEN_HEIGHT) {
-			y = SCREEN_HEIGHT - BALL_WIDTH;
+		if ((position.y + BALL_WIDTH) >= SCREEN_HEIGHT) {
+			position.y = SCREEN_HEIGHT - BALL_WIDTH;
 			speedY = -speedY;
 		}
-		
+
 		// Rebote con la tabla
 		Board board = spriteManager.board; 
 		if (board.rect.overlaps(rect)) {
 			
-			// Si la tabla est� en movimiento puede alterar la direcci�n X de la bola
+			// Si la tabla está en movimiento puede alterar la dirección X de la bola
 			if (board.state == Board.State.LEFT) {
 				speedX = -BALL_SPEED;
 			}
@@ -80,7 +77,7 @@ public class Ball extends Character {
 				speedX = BALL_SPEED;
 			}
 			
-			y = spriteManager.board.y + BOARD_HEIGHT;
+			position.y = spriteManager.board.position.y + BOARD_HEIGHT;
 			speedY = -speedY;
 		}
 		
@@ -90,16 +87,21 @@ public class Ball extends Character {
 			if (brick.rect.overlaps(rect)) {
 				
 				// La bola pega desde abajo
-				if ((rect.y + BALL_WIDTH) <= (brick.rect.y + BRICK_HEIGHT)) {
+				if ((rect.y + BALL_WIDTH) <= (brick.rect.y)) {
 					speedY = -speedY;
-					y = rect.y = brick.y - BALL_WIDTH;
+					position.y = rect.y = brick.position.y - BALL_WIDTH;
 					
 				}
 				// La bola pega desde arriba
-				else {
-					y = rect.y = brick.y + BRICK_HEIGHT;
+				else if ((rect.y > (brick.rect.y + BRICK_HEIGHT))) {
+					position.y = rect.y = brick.position.y + BRICK_HEIGHT;
 					speedY = -speedY;	
 				}
+                // La bola pega de lado
+                else {
+
+                }
+
 				brick.lives--;
 				if (brick.lives == 0)
 					spriteManager.bricks.removeValue(brick, true);

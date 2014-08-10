@@ -11,7 +11,7 @@ import org.sfaci.arkanoidx.util.Constants;
  */
 public class Board extends Character {
 
-	int lives;
+	public int lives;
 	public enum State {
 		RIGHT, LEFT, IDLE;
 	}
@@ -26,7 +26,7 @@ public class Board extends Character {
 	// Desplaza la tabla en el eje x
 	public void move(float x) {
 		
-		this.x += x;
+		position.x += x;
 	}
 	
 	@Override
@@ -35,10 +35,10 @@ public class Board extends Character {
 		super.update(dt);
 		
 		// Comprueba los l�mites de la pantalla
-		if (x <= 0)
-			x = 0;
+		if (position.x <= 0)
+			position.x = 0;
 		
-		if ((x + Constants.BOARD_WIDTH) >= Constants.SCREEN_WIDTH)
-			x = Constants.SCREEN_WIDTH - Constants.BOARD_WIDTH;
+		if ((position.x + Constants.BOARD_WIDTH) >= Constants.SCREEN_WIDTH)
+			position.x = Constants.SCREEN_WIDTH - Constants.BOARD_WIDTH;
 	}
 }
