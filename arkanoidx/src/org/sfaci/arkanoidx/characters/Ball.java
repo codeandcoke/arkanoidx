@@ -68,7 +68,22 @@ public class Ball extends Character {
 		// Rebote con la tabla
 		Board board = spriteManager.board; 
 		if (board.rect.overlaps(rect)) {
-			
+
+            // Si la bola pega en el centro de la tabla se reduce el ángulo de rebote
+            if ((position.x > (board.position.x + BOARD_WIDTH / 4)) && ((position.x + BALL_WIDTH) < (board.position.x + BOARD_WIDTH * 3/4))) {
+                if (speedX > 0)
+                    speedX = BALL_SPEED / 3;
+                else
+                    speedX = -BALL_SPEED / 3;
+            }
+            // Si pega en algún borde la tabla la bola amplia el ángulo de rebote
+            else {
+                if (speedX > 0)
+                    speedX = BALL_SPEED;
+                else
+                    speedX = -BALL_SPEED;
+            }
+
 			// Si la tabla está en movimiento puede alterar la dirección X de la bola
 			if (board.state == Board.State.LEFT) {
 				speedX = -BALL_SPEED;
@@ -85,21 +100,29 @@ public class Ball extends Character {
 		// FIXME Falta comprobar cómo hacer que rebote de lado en un ladrillo
 		for (Brick brick : spriteManager.bricks) {
 			if (brick.rect.overlaps(rect)) {
-				
-				// La bola pega desde abajo
-				if ((rect.y + BALL_WIDTH) <= (brick.rect.y)) {
-					speedY = -speedY;
-					position.y = rect.y = brick.position.y - BALL_WIDTH;
-					
-				}
-				// La bola pega desde arriba
-				else if ((rect.y > (brick.rect.y + BRICK_HEIGHT))) {
-					position.y = rect.y = brick.position.y + BRICK_HEIGHT;
-					speedY = -speedY;	
-				}
-                // La bola pega de lado
-                else {
 
+                // La bola pega desde abajo
+                if ((rect.y) <= (brick.rect.y)) {
+                    position.y = rect.y = brick.rect.y - BALL_HEIGHT;
+                    speedY = -speedY;
+
+                }
+                // La bola pega desde arriba
+                else if ((rect.y) > (brick.rect.y)) {
+                    speedY = -speedY;
+                    position.y = rect.y = brick.rect.y + BRICK_HEIGHT;
+                }
+                else {
+                    /*// La bola pega por el lado derecho
+                    if ((rect.x + BALL_WIDTH) >  (brick.rect.x + BRICK_WIDTH)) {
+                        speedX = -speedX;
+                        position.x = rect.x = brick.rect.x + BRICK_WIDTH;
+                    }
+                    // La bola pega por el lado izquierdo
+                    else if (rect.x < brick.rect.x) {
+                        speedX = -speedX;
+                        position.x = rect.x = brick.rect.x;
+                    }*/
                 }
 
 				brick.lives--;

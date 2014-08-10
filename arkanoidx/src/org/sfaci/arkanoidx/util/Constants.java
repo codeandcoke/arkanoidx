@@ -13,6 +13,7 @@ public class Constants {
 	public static final int BRICK_HEIGHT = 23;
 	
 	public static final int BALL_WIDTH = 12;
+    public static final int BALL_HEIGHT = 12;
 	
-	public static final float BALL_SPEED = 200f;
+	public static final float BALL_SPEED = 300f;
 }
