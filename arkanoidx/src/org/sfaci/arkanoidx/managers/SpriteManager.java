@@ -23,6 +23,8 @@ public class SpriteManager {
 	public Array<Ball> balls;
 	public Array<Brick> bricks;
     public Array<Item> items;
+    private int lives;
+    private int score;
 	
 	SpriteBatch batch;
     Arkanoidx game;
@@ -32,7 +34,10 @@ public class SpriteManager {
 		
 		batch = game.spriteBatch;
         this.game = game;
-		
+
+        lives = LIVES;
+        score = 0;
+
 		init();
 	}
 
@@ -41,7 +46,7 @@ public class SpriteManager {
     }
 
     public void init() {
-        board = new Board(ResourceManager.getAtlas().findRegion("board"), 0, 0, 3);
+        board = new Board(ResourceManager.getAtlas().findRegion("board"), 0, GROUND_LEVEL);
         bricks = new Array<Brick>();
         items = new Array<Item>();
         balls = new Array<Ball>();
@@ -59,6 +64,7 @@ public class SpriteManager {
 				brick.render(batch);
             for (Item item : items)
                 item.render(batch);
+            drawHud();
 		batch.end();
 	}
 	
@@ -77,8 +83,8 @@ public class SpriteManager {
          Si no quedan vidas se termina la partida
          */
         if (balls.size == 0) {
-            if (board.lives > 0) {
-                board.lives--;
+            if (lives > 1) {
+                lives--;
                 levelManager.restartCurrentLevel();
             }
             else {
@@ -89,6 +95,13 @@ public class SpriteManager {
         if (levelIsOver())
             levelManager.passToNextLevel();
 	}
+
+    private void drawHud() {
+        // FIXME pintar el marcador de puntos, vidas, pantalla, . . .
+        game.font.draw(game.spriteBatch, " " + "LEVEL  " + levelManager.currentLevel, 0, 20);
+        game.font.draw(game.spriteBatch, " " + "LIVES  " + lives, 100, 20);
+        game.font.draw(game.spriteBatch, "SCORE  " + score, SCREEN_WIDTH - 120, 20);
+    }
 
     /**
      * Actualiza la lógica de la bola con el resto de elementos
@@ -191,13 +204,13 @@ public class SpriteManager {
                     brick.lives--;
                     if (brick.lives == 0) {
                         removeBrick(brick);
-
+                        score += brick.value;
                     }
                 }
             }
 
             // Si una bola llega al suelo se elimina
-            if (ball.position.y < 0)
+            if (ball.position.y < GROUND_LEVEL)
                 balls.removeValue(ball, true);
         }
     }
@@ -228,6 +241,7 @@ public class SpriteManager {
                         balls.add(ball);
                         break;
                     case V:
+                        // FIXME este item produce que la tabla del jugador se duplique durante un tiempo determinado
                         break;
                     default:
                         break;
@@ -235,6 +249,9 @@ public class SpriteManager {
 
                 items.removeValue(item, true);
             }
+
+            if (item.position.y + ITEM_HEIGHT < GROUND_LEVEL)
+                items.removeValue(item, true);
         }
     }
 

@@ -6,7 +6,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 /**
- * Clase principal de la versi�n de escritorio (PC) del juego
+ * Clase principal de la versi�n de escritorio (PC) del game
  * @author Santiago Faci
  *
  */

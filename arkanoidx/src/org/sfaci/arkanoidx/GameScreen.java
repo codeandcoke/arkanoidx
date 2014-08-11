@@ -14,7 +14,7 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL10;
 
 /**
- * Pantalla del juego, donde el usuario juega la partida
+ * Pantalla del game, donde el usuario juega la partida
  * @author Santiago Faci
  *
  */
@@ -22,7 +22,7 @@ public class GameScreen implements Screen, InputProcessor {
 
 	final Arkanoidx game;
 	
-	// Indica si el juego está en pausa
+	// Indica si el game está en pausa
 	boolean paused = false;
 	
 	LevelManager levelManager;
@@ -57,7 +57,7 @@ public class GameScreen implements Screen, InputProcessor {
 		game.camera.update();
 		
 		/* Comprueba la entrada del usuario, actualiza
-		 * la posición de los elementos del juego y
+		 * la posición de los elementos del game y
 		 * dibuja en pantalla
 		 */
 		if (!paused) {
@@ -131,7 +131,7 @@ public class GameScreen implements Screen, InputProcessor {
 	@Override
 	public boolean keyUp(int keycode) {
 		
-		// Pone el juego en pausa
+		// Pone el game en pausa
 		if (keycode == Keys.P)
 			paused = !paused;
 		return false;

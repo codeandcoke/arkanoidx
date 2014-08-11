@@ -14,16 +14,14 @@ import static org.sfaci.arkanoidx.util.Constants.*;
  */
 public class Board extends Character {
 
-	public int lives;
 	public enum State {
 		RIGHT, LEFT, IDLE;
 	}
 	public State state;
     public int width;
 	
-	public Board(TextureRegion texture, float x, float y, int lives) {
+	public Board(TextureRegion texture, float x, float y) {
 		super(texture, x, y);
-		this.lives = lives;
 		state = State.IDLE;
 
         width = BOARD_WIDTH;

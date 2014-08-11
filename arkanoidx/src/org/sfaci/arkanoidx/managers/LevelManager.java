@@ -46,8 +46,8 @@ public class LevelManager {
 					x += Constants.BRICK_WIDTH;
 					continue;
 				}
-	
-				brick = new Brick(getTextureBrick(brickId.trim()), x, y, BrickType.values()[Integer.valueOf(brickId.trim())], 1, 1);
+	            // FIXME asignar vida y valor a los ladrillos en función del color
+				brick = new Brick(getTextureBrick(brickId.trim()), x, y, BrickType.values()[Integer.valueOf(brickId.trim())], 1, 25);
                 // Se calcula si este ladrillo llevará asociado un item
                 if (MathUtils.random(0, 10) < 6) {
                     ItemType itemType = ItemType.values()[MathUtils.random(0, 4)];
@@ -95,6 +95,7 @@ public class LevelManager {
      */
     public void passToNextLevel() {
         currentLevel++;
+        spriteManager.init();
         loadCurrentLevel();
     }
 	

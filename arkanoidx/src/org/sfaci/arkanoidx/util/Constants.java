@@ -15,6 +15,15 @@ public class Constants {
 	
 	public static final int BALL_WIDTH = 12;
     public static final int BALL_HEIGHT = 12;
+
+    public static final int ITEM_WIDTH = 27;
+    public static final int ITEM_HEIGHT = 30;
 	
 	public static final float BALL_SPEED = 300f;
+
+    // Vidas al inicia de la partida
+    public static final int LIVES = 1;
+
+    // Nivel donde se sitúa el juego (debajo se proyecto el HUD)
+    public static final int GROUND_LEVEL = 40;
 }
