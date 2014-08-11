@@ -1,4 +1,4 @@
 arkanoidx
 =========
 
-A clone of classical Arkanoid developed with libGDX game library [libGDX](http://libgdx.badlogicgame.com)
+A clone of classical Arkanoid developed with [libGDX](http://libgdx.badlogicgame.com) game library
