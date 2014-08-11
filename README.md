@@ -1,10 +1,4 @@
 arkanoidx
 =========
 
-A clone of classical Arkanoid
-
-There are two releases:
-- [v1](https://github.com/sfaci/arkanoidx/releases/tag/v1)  
-- [v2](https://github.com/sfaci/arkanoidx/releases/tag/v2)
-
-You can visit the project's webpage [here](http://sfaci.github.io/arkanoidx), created with _GitHub Pages generator_
+A clone of classical Arkanoid developed with libGDX game library [libGDX](http://libgdx.badlogicgame.com)
