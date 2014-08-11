@@ -15,9 +15,10 @@ public class Brick extends Character {
 		YELLOW, BLACK, GREEN, WHITE, PURPLE, RED, BLUE, GRAY
 	}
 	
-	BrickType type;
-	int lives;
-	int value;
+	public BrickType type;
+	public int lives;
+	public int value;
+    private Item item;      // Item que puede llevar (o no) asociado este ladrillo)
 	
 	/**
 	 * Constructor
@@ -41,4 +42,20 @@ public class Brick extends Character {
 		
 		super.update(dt);
 	}
+
+    /**
+     * Asocia un item a este ladrillo
+     * @param newItem El nuevo Item
+     */
+    public void setItem(Item newItem) {
+        item = newItem;
+    }
+
+    /**
+     * Devuelve el item asociado (si lo tiene)
+     * @return El item asociado o null si no tiene item
+     */
+    public Item getItem() {
+        return item;
+    }
 }

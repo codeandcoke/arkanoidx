@@ -1,5 +1,6 @@
 package org.sfaci.arkanoidx;
 
+import org.sfaci.arkanoidx.characters.Ball;
 import org.sfaci.arkanoidx.characters.Board;
 import org.sfaci.arkanoidx.managers.LevelManager;
 import org.sfaci.arkanoidx.managers.ResourceManager;
@@ -85,7 +86,8 @@ public class GameScreen implements Screen, InputProcessor {
 		}
 		
 		if (Gdx.input.isKeyPressed(Keys.SPACE)) {
-			spriteManager.ball.setPaused(false);
+            for (Ball ball : spriteManager.balls)
+			    ball.setPaused(false);
 		}
 	}
 

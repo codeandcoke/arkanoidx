@@ -14,24 +14,29 @@ import static org.sfaci.arkanoidx.util.Constants.*;
 public class Ball extends Character {
 
 	// Al comenzar la partida la bola puede aparecer pausada
-	boolean paused;
-	float speedX;
-	float speedY;
+	private boolean paused;
+	public float speedX;
+	public float speedY;
+    public boolean unbeatable;
 	
-	private SpriteManager spriteManager;
-	
-	public Ball(TextureRegion texture, float x, float y, SpriteManager spriteManager) {
+	public Ball(TextureRegion texture, float x, float y) {
 		super(texture, x, y);
 		speedX = BALL_SPEED;
 		speedY = BALL_SPEED;
 		paused = true;
-		
-		this.spriteManager = spriteManager;
 	}
 	
 	public void setPaused(boolean paused) {
 		this.paused = paused;
 	}
+
+    public void setUnbeatable(boolean unbeatable) {
+        this.unbeatable = unbeatable;
+    }
+
+    public boolean isUnbeatable() {
+        return unbeatable;
+    }
 	
 	@Override
 	public void update(float dt) {
@@ -45,90 +50,5 @@ public class Ball extends Character {
 		position.y += speedY * dt;
 
         super.update(dt);
-		
-		// Comprueba los límites de la pantalla (
-		// Rebote en parte izquierda
-		if (position.x <= 0) {
-			position.x = 0;
-			speedX = -speedX;
-		}
-			
-		// Rebote en parte derecha
-		if ((position.x + BALL_WIDTH) >= SCREEN_WIDTH) {
-			position.x = SCREEN_WIDTH - BALL_WIDTH;
-			speedX = -speedX;
-		}
-		
-		// Rebote en el techo
-		if ((position.y + BALL_WIDTH) >= SCREEN_HEIGHT) {
-			position.y = SCREEN_HEIGHT - BALL_WIDTH;
-			speedY = -speedY;
-		}
-
-		// Rebote con la tabla
-		Board board = spriteManager.board; 
-		if (board.rect.overlaps(rect)) {
-
-            // Si la bola pega en el centro de la tabla se reduce el ángulo de rebote
-            if ((position.x > (board.position.x + BOARD_WIDTH / 4)) && ((position.x + BALL_WIDTH) < (board.position.x + BOARD_WIDTH * 3/4))) {
-                if (speedX > 0)
-                    speedX = BALL_SPEED / 3;
-                else
-                    speedX = -BALL_SPEED / 3;
-            }
-            // Si pega en algún borde la tabla la bola amplia el ángulo de rebote
-            else {
-                if (speedX > 0)
-                    speedX = BALL_SPEED;
-                else
-                    speedX = -BALL_SPEED;
-            }
-
-			// Si la tabla está en movimiento puede alterar la dirección X de la bola
-			if (board.state == Board.State.LEFT) {
-				speedX = -BALL_SPEED;
-			}
-			if (board.state == Board.State.RIGHT) {
-				speedX = BALL_SPEED;
-			}
-			
-			position.y = spriteManager.board.position.y + BOARD_HEIGHT;
-			speedY = -speedY;
-		}
-		
-		// Rebote con ladrillos
-		// FIXME Falta comprobar cómo hacer que rebote de lado en un ladrillo
-		for (Brick brick : spriteManager.bricks) {
-			if (brick.rect.overlaps(rect)) {
-
-                // La bola pega desde abajo
-                if ((rect.y) <= (brick.rect.y)) {
-                    position.y = rect.y = brick.rect.y - BALL_HEIGHT;
-                    speedY = -speedY;
-
-                }
-                // La bola pega desde arriba
-                else if ((rect.y) > (brick.rect.y)) {
-                    speedY = -speedY;
-                    position.y = rect.y = brick.rect.y + BRICK_HEIGHT;
-                }
-                else {
-                    /*// La bola pega por el lado derecho
-                    if ((rect.x + BALL_WIDTH) >  (brick.rect.x + BRICK_WIDTH)) {
-                        speedX = -speedX;
-                        position.x = rect.x = brick.rect.x + BRICK_WIDTH;
-                    }
-                    // La bola pega por el lado izquierdo
-                    else if (rect.x < brick.rect.x) {
-                        speedX = -speedX;
-                        position.x = rect.x = brick.rect.x;
-                    }*/
-                }
-
-				brick.lives--;
-				if (brick.lives == 0)
-					spriteManager.bricks.removeValue(brick, true);
-			}
-		}
 	}
 }

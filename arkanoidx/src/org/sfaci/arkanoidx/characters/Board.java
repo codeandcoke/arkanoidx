@@ -1,7 +1,10 @@
 package org.sfaci.arkanoidx.characters;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import org.sfaci.arkanoidx.util.Constants;
+import com.badlogic.gdx.math.Rectangle;
+import org.sfaci.arkanoidx.managers.ResourceManager;
+
+import static org.sfaci.arkanoidx.util.Constants.*;
 
 /**
  * Clase que representa la tabla del jugador
@@ -16,12 +19,30 @@ public class Board extends Character {
 		RIGHT, LEFT, IDLE;
 	}
 	public State state;
+    public int width;
 	
 	public Board(TextureRegion texture, float x, float y, int lives) {
 		super(texture, x, y);
 		this.lives = lives;
 		state = State.IDLE;
+
+        width = BOARD_WIDTH;
 	}
+
+    /**
+     * Cambia el tamaño de la tabla
+     * Actualmente se trabaja con 2 tamaños
+     */
+    public void changeSize(int newWidth) {
+
+        if (newWidth == BOARD_WIDTH)
+            texture = ResourceManager.getAtlas().findRegion("board");
+        else
+            texture = ResourceManager.getAtlas().findRegion("board2");
+
+        rect = new Rectangle(position.x, position.y, texture.getRegionWidth(), texture.getRegionHeight());
+        width = newWidth;
+    }
 	
 	// Desplaza la tabla en el eje x
 	public void move(float x) {
@@ -34,11 +55,11 @@ public class Board extends Character {
 		
 		super.update(dt);
 		
-		// Comprueba los l�mites de la pantalla
+		// Comprueba los límites de la pantalla
 		if (position.x <= 0)
 			position.x = 0;
 		
-		if ((position.x + Constants.BOARD_WIDTH) >= Constants.SCREEN_WIDTH)
-			position.x = Constants.SCREEN_WIDTH - Constants.BOARD_WIDTH;
+		if ((position.x + width) >= SCREEN_WIDTH)
+			position.x = SCREEN_WIDTH - width;
 	}
 }

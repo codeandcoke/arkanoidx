@@ -7,6 +7,7 @@ public class Constants {
 	
 	public static final float BOARD_SPEED = 350f;
 	public static final int BOARD_WIDTH = 60;
+    public static final int BOARD2_WIDTH = 90;
 	public static final int BOARD_HEIGHT = 15;
 	
 	public static final int BRICK_WIDTH = 45;

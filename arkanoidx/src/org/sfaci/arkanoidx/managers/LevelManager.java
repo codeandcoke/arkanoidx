@@ -1,9 +1,11 @@
 package org.sfaci.arkanoidx.managers;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.math.MathUtils;
 import org.sfaci.arkanoidx.characters.Brick;
 import org.sfaci.arkanoidx.characters.Brick.BrickType;
+import org.sfaci.arkanoidx.characters.Item;
+import org.sfaci.arkanoidx.characters.Item.ItemType;
 import org.sfaci.arkanoidx.util.Constants;
 
 import com.badlogic.gdx.Gdx;
@@ -46,6 +48,30 @@ public class LevelManager {
 				}
 	
 				brick = new Brick(getTextureBrick(brickId.trim()), x, y, BrickType.values()[Integer.valueOf(brickId.trim())], 1, 1);
+                // Se calcula si este ladrillo llevará asociado un item
+                if (MathUtils.random(0, 10) < 6) {
+                    ItemType itemType = ItemType.values()[MathUtils.random(0, 4)];
+                    switch (itemType) {
+                        case E:
+                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_e"), x, y, ItemType.E));
+                            break;
+                        case I:
+                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_i"), x, y, ItemType.I));
+                            break;
+                        case L:
+                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_l"), x, y, ItemType.L));
+                            break;
+                        case O:
+                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_o"), x, y, ItemType.O));
+                            break;
+                        case V:
+                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_v"), x, y, ItemType.V));
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
 				spriteManager.bricks.add(brick);
 				x += Constants.BRICK_WIDTH;
 			}

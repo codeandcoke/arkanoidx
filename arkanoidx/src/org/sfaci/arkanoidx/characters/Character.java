@@ -15,7 +15,7 @@ public abstract class Character {
 
 	TextureRegion texture;
     public Vector2 position;
-	Rectangle rect;
+	public Rectangle rect;
 	
 	public Character(TextureRegion texture, float x, float y) {
 		this.texture = texture;

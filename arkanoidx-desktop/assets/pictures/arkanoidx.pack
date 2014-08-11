@@ -1,69 +1,111 @@
 
 arkanoidx.png
 format: RGBA8888
-filter: Linear,Linear
+filter: Nearest,Nearest
 repeat: none
-board
+board2
   rotate: false
   xy: 1, 15
+  size: 90, 15
+  orig: 90, 15
+  offset: 0, 0
+  index: -1
+board
+  rotate: false
+  xy: 93, 15
   size: 60, 15
   orig: 60, 15
   offset: 0, 0
   index: -1
 white_brick
   rotate: false
-  xy: 63, 7
+  xy: 155, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 black_brick
   rotate: false
-  xy: 110, 7
+  xy: 202, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 red_brick
   rotate: false
-  xy: 157, 7
+  xy: 249, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 blue_brick
   rotate: false
-  xy: 204, 7
+  xy: 296, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 gray_brick
   rotate: false
-  xy: 251, 7
+  xy: 343, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 yellow_brick
   rotate: false
-  xy: 298, 7
+  xy: 390, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 purple_brick
   rotate: false
-  xy: 345, 7
+  xy: 437, 7
   size: 45, 23
   orig: 45, 23
   offset: 0, 0
   index: -1
 green_brick
   rotate: false
-  xy: 392, 7
+  xy: 484, 7
   size: 45, 23
   orig: 45, 23
+  offset: 0, 0
+  index: -1
+letra_e
+  rotate: false
+  xy: 531, 2
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+letra_v
+  rotate: false
+  xy: 563, 2
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+letra_i
+  rotate: false
+  xy: 595, 3
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+letra_o
+  rotate: false
+  xy: 627, 3
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+letra_l
+  rotate: false
+  xy: 659, 3
+  size: 30, 27
+  orig: 30, 27
   offset: 0, 0
   index: -1
 ball
