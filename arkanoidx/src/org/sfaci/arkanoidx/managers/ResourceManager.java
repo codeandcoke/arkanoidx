@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 /**
  * Clase que gestiona los recursos del juego
  * @author Santiago Faci
+ * @version Agosto 2014
  *
  */
 public class ResourceManager {
@@ -27,6 +28,8 @@ public class ResourceManager {
 		Texture.setEnforcePotImages(false);
 
         atlas = new TextureAtlas(Gdx.files.internal("pictures/arkanoidx.pack"));
+
+        sounds.put("bump", Gdx.audio.newSound(Gdx.files.internal("sounds/bump.wav")));
 	}
 
     public static TextureAtlas getAtlas() {

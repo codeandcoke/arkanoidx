@@ -8,7 +8,7 @@ import static org.sfaci.arkanoidx.util.Constants.*;
 /**
  * Clase que representa la bola
  * @author Santiago Faci
- * @version 1.0
+ * @version Agosto 2014
  *
  */
 public class Ball extends Character {

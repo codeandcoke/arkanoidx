@@ -1,5 +1,6 @@
-package org.sfaci.arkanoidx;
+package org.sfaci.arkanoidx.screens;
 
+import org.sfaci.arkanoidx.Arkanoidx;
 import org.sfaci.arkanoidx.characters.Ball;
 import org.sfaci.arkanoidx.characters.Board;
 import org.sfaci.arkanoidx.managers.LevelManager;
@@ -16,7 +17,7 @@ import com.badlogic.gdx.graphics.GL10;
 /**
  * Pantalla del game, donde el usuario juega la partida
  * @author Santiago Faci
- *
+ * @version Agosto 2014
  */
 public class GameScreen implements Screen, InputProcessor {
 

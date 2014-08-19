@@ -2,6 +2,7 @@ package org.sfaci.arkanoidx;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import org.sfaci.arkanoidx.screens.MainMenuScreen;
 import org.sfaci.arkanoidx.util.Constants;
 
 import com.badlogic.gdx.Game;
@@ -13,7 +14,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
  * Clase principal del proyecto principal del game
  * 
  * @author Santiago Faci
- * @version 1.0
+ * @version Agosto 2014
  *
  */
 public class Arkanoidx extends Game {

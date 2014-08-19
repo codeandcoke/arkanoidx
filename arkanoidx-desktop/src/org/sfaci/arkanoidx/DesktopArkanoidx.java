@@ -6,9 +6,9 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 /**
- * Clase principal de la versi�n de escritorio (PC) del game
+ * Clase principal de la versión de escritorio (PC) del game
  * @author Santiago Faci
- *
+ * @version Agosto 2014
  */
 public class DesktopArkanoidx {
 

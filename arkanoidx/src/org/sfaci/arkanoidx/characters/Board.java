@@ -9,7 +9,7 @@ import static org.sfaci.arkanoidx.util.Constants.*;
 /**
  * Clase que representa la tabla del jugador
  * @author Santiago Faci
- * @version 1.0
+ * @version Agosto 2014
  *
  */
 public class Board extends Character {

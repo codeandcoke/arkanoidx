@@ -1,5 +1,10 @@
 package org.sfaci.arkanoidx.util;
 
+/**
+ * Constantes del proyecto
+ * @author Santiago Faci
+ * @version Agosto 2014
+ */
 public class Constants {
 
 	public static final int SCREEN_WIDTH = 540;

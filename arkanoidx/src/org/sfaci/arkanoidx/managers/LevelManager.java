@@ -14,6 +14,7 @@ import com.badlogic.gdx.files.FileHandle;
 /**
  * Clase que gestiona los niveles del juego
  * @author Santiago Faci
+ * @version Agosto 2014
  *
  */
 public class LevelManager {

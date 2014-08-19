@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  * que rompe el jugador
  *
  * @author Santiago Faci
- * @version 1.0
+ * @version Agosto 2014
  */
 public class Item extends Character {
 

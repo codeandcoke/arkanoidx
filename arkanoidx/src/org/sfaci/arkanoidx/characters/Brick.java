@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 /**
  * Clase que representa a cada uno de los ladrillos del juego
  * @author Santiago Faci
- * @version
+ * @version Agosto 2014
  *
  */
 public class Brick extends Character {

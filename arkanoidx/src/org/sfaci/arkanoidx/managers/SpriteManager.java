@@ -1,7 +1,7 @@
 package org.sfaci.arkanoidx.managers;
 
 import org.sfaci.arkanoidx.Arkanoidx;
-import org.sfaci.arkanoidx.GameOverScreen;
+import org.sfaci.arkanoidx.screens.GameOverScreen;
 import org.sfaci.arkanoidx.characters.Ball;
 import org.sfaci.arkanoidx.characters.Board;
 import org.sfaci.arkanoidx.characters.Brick;
@@ -14,7 +14,7 @@ import com.badlogic.gdx.utils.Array;
 /**
  * Clase que gestiona los sprites del juego
  * @author Santiago Faci
- * @version 1.0
+ * @version Agosto 2014
  *
  */
 public class SpriteManager {
@@ -200,6 +200,8 @@ public class SpriteManager {
                         position.x = rect.x = brick.rect.x;
                     }*/
                     }
+
+                    ResourceManager.getSound("bump").play();
 
                     brick.lives--;
                     if (brick.lives == 0) {
