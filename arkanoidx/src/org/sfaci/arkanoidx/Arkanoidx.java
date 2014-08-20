@@ -3,6 +3,7 @@ package org.sfaci.arkanoidx;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import org.sfaci.arkanoidx.screens.MainMenuScreen;
+import org.sfaci.arkanoidx.screens.SplashScreen;
 import org.sfaci.arkanoidx.util.Constants;
 
 import com.badlogic.gdx.Game;
@@ -27,14 +28,14 @@ public class Arkanoidx extends Game {
 	@Override
 	public void create() {
 		spriteBatch = new SpriteBatch();
-		font = new BitmapFont();
+		font = new BitmapFont(Gdx.files.internal("ui/default.fnt"));
 		
 		// Crea la cámara y define la zona de visión del game (toda la pantalla)
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 		camera.update();
 		
-		setScreen(new MainMenuScreen(this));
+		setScreen(new SplashScreen(this));
 	}
 
 	@Override
@@ -50,7 +51,7 @@ public class Arkanoidx extends Game {
 
     public Skin getSkin() {
         if (skin == null)
-            skin = new Skin(Gdx.files.internal("uiskin.json"));
+            skin = new Skin(Gdx.files.internal("ui/uiskin.json"));
 
         return skin;
     }

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -19,6 +20,8 @@ public class ResourceManager {
     /* Atlas de texturas con todos los elementos del juego */
     private static TextureAtlas atlas = new TextureAtlas();
 	private static Map<String, Sound> sounds = new HashMap<String, Sound>();
+
+    public static AssetManager assets = new AssetManager();
 	
 	/**
 	 * Carga en memoria todos los recursos del juego (texturas y sonidos)
@@ -27,13 +30,12 @@ public class ResourceManager {
 		
 		Texture.setEnforcePotImages(false);
 
-        atlas = new TextureAtlas(Gdx.files.internal("pictures/arkanoidx.pack"));
-
-        sounds.put("bump", Gdx.audio.newSound(Gdx.files.internal("sounds/bump.wav")));
+        assets.load("pictures/arkanoidx.pack", TextureAtlas.class);
+        assets.load("sounds/bump.wav", Sound.class);
 	}
 
-    public static TextureAtlas getAtlas() {
-        return atlas;
+    public static TextureAtlas getAtlas(String name) {
+        return assets.get(name, TextureAtlas.class);
     }
 	
 	/**
@@ -43,6 +45,10 @@ public class ResourceManager {
 	 */
 	public static Sound getSound(String name) {
 		
-		return sounds.get(name);
+		return assets.get(name, Sound.class);
 	}
+
+    public static boolean update() {
+        return assets.update();
+    }
 }

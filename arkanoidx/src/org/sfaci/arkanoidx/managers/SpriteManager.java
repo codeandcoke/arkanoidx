@@ -46,11 +46,11 @@ public class SpriteManager {
     }
 
     public void init() {
-        board = new Board(ResourceManager.getAtlas().findRegion("board"), 0, GROUND_LEVEL);
+        board = new Board(ResourceManager.getAtlas(ATLAS_PATH).findRegion("board"), 0, GROUND_LEVEL);
         bricks = new Array<Brick>();
         items = new Array<Item>();
         balls = new Array<Ball>();
-        Ball ball = new Ball(ResourceManager.getAtlas().findRegion("ball"), SCREEN_WIDTH / 2, 250);
+        Ball ball = new Ball(ResourceManager.getAtlas(ATLAS_PATH).findRegion("ball"), SCREEN_WIDTH / 2, 250);
         balls.add(ball);
     }
 	
@@ -201,7 +201,7 @@ public class SpriteManager {
                     }*/
                     }
 
-                    ResourceManager.getSound("bump").play();
+                    ResourceManager.getSound("sounds/bump.wav").play();
 
                     brick.lives--;
                     if (brick.lives == 0) {
@@ -239,7 +239,7 @@ public class SpriteManager {
                         board.changeSize(BOARD_WIDTH);
                         break;
                     case O:
-                        Ball ball = new Ball(ResourceManager.getAtlas().findRegion("ball"), SCREEN_WIDTH / 2, 250);
+                        Ball ball = new Ball(ResourceManager.getAtlas(ATLAS_PATH).findRegion("ball"), SCREEN_WIDTH / 2, 250);
                         balls.add(ball);
                         break;
                     case V:

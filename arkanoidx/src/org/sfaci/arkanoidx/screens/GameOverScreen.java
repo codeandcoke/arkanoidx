@@ -15,9 +15,8 @@ import org.sfaci.arkanoidx.Arkanoidx;
  * Pantalla de fin de partida
  * @author Santiago Faci
  * @version Agosto 2014
- *
  */
-public class GameOverScreen implements Screen {
+public class  GameOverScreen implements Screen {
 	
 	final Arkanoidx game;
 	OrthographicCamera camera;
@@ -96,6 +95,5 @@ public class GameOverScreen implements Screen {
 
 	@Override
 	public void dispose() {
-		game.dispose();
 	}
 }

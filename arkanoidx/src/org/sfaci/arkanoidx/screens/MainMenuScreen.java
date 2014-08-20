@@ -32,7 +32,7 @@ public class MainMenuScreen implements Screen {
 	public void render(float dt) {
 
         // Limpia la pantalla
-        Gdx.gl.glClearColor(0, 0, 0.2f, 1);
+        Gdx.gl.glClearColor(0, 0, 0.3f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
 		stage.act();

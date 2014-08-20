@@ -1,5 +1,6 @@
 package org.sfaci.arkanoidx.screens;
 
+import com.badlogic.gdx.graphics.GL20;
 import org.sfaci.arkanoidx.Arkanoidx;
 import org.sfaci.arkanoidx.characters.Ball;
 import org.sfaci.arkanoidx.characters.Board;
@@ -50,9 +51,9 @@ public class GameScreen implements Screen, InputProcessor {
 	public void render(float dt) {
 		
 		// Pinta el fondo de la pantalla de azul oscuro (RGB + alpha)
-		Gdx.gl.glClearColor(0, 0, 0.2f, 1);
+		Gdx.gl.glClearColor(0, 0, 0.3f, 1);
 		// Limpia la pantalla
-		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		// Actualiza la cámara
 		game.camera.update();

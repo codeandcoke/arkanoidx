@@ -6,7 +6,7 @@ import org.sfaci.arkanoidx.characters.Brick;
 import org.sfaci.arkanoidx.characters.Brick.BrickType;
 import org.sfaci.arkanoidx.characters.Item;
 import org.sfaci.arkanoidx.characters.Item.ItemType;
-import org.sfaci.arkanoidx.util.Constants;
+import static org.sfaci.arkanoidx.util.Constants.*;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -36,7 +36,7 @@ public class LevelManager {
 		FileHandle file = Gdx.files.internal("levels/level" + currentLevel + ".txt");
 		String levelInfo = file.readString();
 		
-		int x = 0, y = Constants.SCREEN_HEIGHT - Constants.BRICK_HEIGHT;
+		int x = 0, y = SCREEN_HEIGHT - BRICK_HEIGHT;
 		String[] rows = levelInfo.split("\n");
 		Brick brick = null;
 		for (String row : rows) {
@@ -44,29 +44,29 @@ public class LevelManager {
 			for (String brickId : brickIds) {
 	
 				if (brickId.trim().equals("x")) {
-					x += Constants.BRICK_WIDTH;
+					x += BRICK_WIDTH;
 					continue;
 				}
 	            // FIXME asignar vida y valor a los ladrillos en función del color
 				brick = new Brick(getTextureBrick(brickId.trim()), x, y, BrickType.values()[Integer.valueOf(brickId.trim())], 1, 25);
                 // Se calcula si este ladrillo llevará asociado un item
-                if (MathUtils.random(0, 10) < 6) {
+                if (MathUtils.random(0, 10) < 4) {
                     ItemType itemType = ItemType.values()[MathUtils.random(0, 4)];
                     switch (itemType) {
                         case E:
-                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_e"), x, y, ItemType.E));
+                            brick.setItem(new Item(ResourceManager.getAtlas(ATLAS_PATH).findRegion("letra_e"), x, y, ItemType.E));
                             break;
                         case I:
-                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_i"), x, y, ItemType.I));
+                            brick.setItem(new Item(ResourceManager.getAtlas(ATLAS_PATH).findRegion("letra_i"), x, y, ItemType.I));
                             break;
                         case L:
-                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_l"), x, y, ItemType.L));
+                            brick.setItem(new Item(ResourceManager.getAtlas(ATLAS_PATH).findRegion("letra_l"), x, y, ItemType.L));
                             break;
                         case O:
-                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_o"), x, y, ItemType.O));
+                            brick.setItem(new Item(ResourceManager.getAtlas(ATLAS_PATH).findRegion("letra_o"), x, y, ItemType.O));
                             break;
                         case V:
-                            brick.setItem(new Item(ResourceManager.getAtlas().findRegion("letra_v"), x, y, ItemType.V));
+                            brick.setItem(new Item(ResourceManager.getAtlas(ATLAS_PATH).findRegion("letra_v"), x, y, ItemType.V));
                             break;
                         default:
                             break;
@@ -74,11 +74,11 @@ public class LevelManager {
                 }
 
 				spriteManager.bricks.add(brick);
-				x += Constants.BRICK_WIDTH;
+				x += BRICK_WIDTH;
 			}
 			
 			x = 0;
-			y -= Constants.BRICK_HEIGHT;
+			y -= BRICK_HEIGHT;
 		}
 	}
 
@@ -111,21 +111,21 @@ public class LevelManager {
 		
 		switch (type) {
 		case YELLOW:
-			return ResourceManager.getAtlas().findRegion("yellow_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("yellow_brick");
 		case BLACK:
-			return ResourceManager.getAtlas().findRegion("black_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("black_brick");
 		case GREEN:
-			return ResourceManager.getAtlas().findRegion("green_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("green_brick");
 		case WHITE:
-			return ResourceManager.getAtlas().findRegion("white_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("white_brick");
 		case PURPLE:
-			return ResourceManager.getAtlas().findRegion("purple_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("purple_brick");
 		case RED:
-			return ResourceManager.getAtlas().findRegion("red_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("red_brick");
 		case BLUE:
-			return ResourceManager.getAtlas().findRegion("blue_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("blue_brick");
 		case GRAY:
-			return ResourceManager.getAtlas().findRegion("gray_brick");
+			return ResourceManager.getAtlas(ATLAS_PATH).findRegion("gray_brick");
 		default:
 			return null;
 		}

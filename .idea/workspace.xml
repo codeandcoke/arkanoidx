@@ -3,23 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="fa710c40-c610-46c6-afde-1ec8ddbe6568" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arkanoidx-desktop/assets/sounds/bump.wav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx-desktop/src/org/sfaci/arkanoidx/DesktopArkanoidx.java" afterPath="$PROJECT_DIR$/arkanoidx-desktop/src/org/sfaci/arkanoidx/DesktopArkanoidx.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Util.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx-desktop/src/org/sfaci/arkanoidx/DesktopArkanoidx.java" afterPath="$PROJECT_DIR$/arkanoidx-desktop/src/org/sfaci/arkanoidx/DesktopArkanoidx.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" afterPath="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" />
     </list>
     <ignored path="arkanoidx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +30,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -42,61 +47,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1785">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpriteManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="4170">
-              <caret line="190" column="32" selection-start-line="190" selection-start-column="32" selection-end-line="190" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Character.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="645">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="630">
               <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19911504" vertical-offset="0" max-vertical-offset="720">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="720">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Util.java">
+      <file leaf-file-name="SpriteManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state vertical-scroll-proportion="1.1806854" vertical-offset="2872" max-vertical-offset="3975">
+              <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java">
+      <file leaf-file-name="Arkanoidx.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="810">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="960">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1785">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="2655">
+              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2085">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ball.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="900">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1035">
+              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Brick.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="990">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -141,23 +186,27 @@
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/MainMenuScreen.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/GameOverScreen.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" />
         <option value="$PROJECT_DIR$/arkanoidx-desktop/src/org/sfaci/arkanoidx/DesktopArkanoidx.java" />
-        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Util.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/SplashScreen.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java" />
         <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Character.java" />
+        <option value="$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
@@ -210,7 +259,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -365,6 +413,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,10 +427,10 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -634,11 +683,17 @@
       <workItem from="1408036995565" duration="215000" />
       <workItem from="1408045635929" duration="6000" />
       <workItem from="1408379409669" duration="40000" />
+      <workItem from="1408412396652" duration="283000" />
+      <workItem from="1408472614537" duration="645000" />
+      <workItem from="1408473880073" duration="526000" />
+      <workItem from="1408474426844" duration="1241000" />
+      <workItem from="1408485866344" duration="333000" />
+      <workItem from="1408531341623" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2553000" />
+    <option name="totallyTimeSpent" value="5918000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -668,17 +723,17 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20759289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -686,8 +741,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -705,6 +760,7 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -714,14 +770,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="4170">
@@ -750,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="810">
           <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="810">
           <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,156 +951,89 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level2.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level2.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level2.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level2.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/levels/level1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx-desktop/assets/uiskin.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41756758" vertical-offset="216" max-vertical-offset="975">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/arkanoidx/libs/gdx-sources.jar!/com/badlogic/gdx/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2190">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1069,41 +1044,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16959798" vertical-offset="0" max-vertical-offset="796">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1485">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/SplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="1530">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/arkanoidx/libs/gdx-sources.jar!/com/badlogic/gdx/assets/AssetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="9105">
+          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ResourceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="735">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameOverScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/ConfigurationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java">
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975">
-          <caret line="190" column="32" selection-start-line="190" selection-start-column="32" selection-end-line="190" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="975">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Brick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="930">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1116,10 +1126,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/MainMenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1485">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/screens/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2190">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/Arkanoidx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/characters/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19911504" vertical-offset="0" max-vertical-offset="720">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="720">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/LevelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="1950">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkanoidx/src/org/sfaci/arkanoidx/managers/SpriteManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1806854" vertical-offset="2872" max-vertical-offset="3975">
+          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
           <folding />
         </state>
       </provider>

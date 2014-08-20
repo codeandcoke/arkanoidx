@@ -34,9 +34,9 @@ public class Board extends Character {
     public void changeSize(int newWidth) {
 
         if (newWidth == BOARD_WIDTH)
-            texture = ResourceManager.getAtlas().findRegion("board");
+            texture = ResourceManager.getAtlas(ATLAS_PATH).findRegion("board");
         else
-            texture = ResourceManager.getAtlas().findRegion("board2");
+            texture = ResourceManager.getAtlas(ATLAS_PATH).findRegion("board2");
 
         rect = new Rectangle(position.x, position.y, texture.getRegionWidth(), texture.getRegionHeight());
         width = newWidth;

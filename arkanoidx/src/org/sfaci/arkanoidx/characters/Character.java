@@ -9,7 +9,6 @@ import com.badlogic.gdx.math.Vector2;
  * Clase base para todos los caracteres del juego
  * @author Santiago Faci
  * @version Agosto 2014
- *
  */
 public abstract class Character {
 

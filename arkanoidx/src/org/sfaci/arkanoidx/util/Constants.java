@@ -31,4 +31,6 @@ public class Constants {
 
     // Nivel donde se sitúa el juego (debajo se proyecto el HUD)
     public static final int GROUND_LEVEL = 40;
+
+    public static final String ATLAS_PATH = "pictures/arkanoidx.pack";
 }
