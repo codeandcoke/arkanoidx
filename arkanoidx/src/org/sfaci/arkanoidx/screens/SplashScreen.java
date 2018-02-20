@@ -36,11 +36,11 @@ public class SplashScreen implements Screen {
     }
 
     @Override
-    public void render(float delta) {
+    public void render(float dt) {
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_CLEAR_VALUE);
 
-        stage.act();
+        stage.act(dt);
         stage.draw();
 
         // Comprueba si se han cargado todos los recursos
