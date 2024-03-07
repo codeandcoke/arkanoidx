@@ -155,6 +155,11 @@ public class GameScreen implements Screen, InputProcessor {
 	}
 
 	@Override
+	public boolean touchCancelled(int i, int i1, int i2, int i3) {
+		return false;
+	}
+
+	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
 		return false;
 	}
@@ -165,7 +170,7 @@ public class GameScreen implements Screen, InputProcessor {
 	}
 
 	@Override
-	public boolean scrolled(int amount) {
+	public boolean scrolled(float v, float v1) {
 		return false;
 	}
 }

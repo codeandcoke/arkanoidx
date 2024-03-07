@@ -7,8 +7,8 @@ package com.codeandcoke.arkanoidx.util;
  */
 public class Constants {
 
-	public static final int SCREEN_WIDTH = 540;
-	public static final int SCREEN_HEIGHT = 768;
+	public static final int SCREEN_WIDTH = 1024;
+	public static final int SCREEN_HEIGHT = 1024;
 	
 	public static final float BOARD_SPEED = 350f;
 	public static final int BOARD_WIDTH = 60;
