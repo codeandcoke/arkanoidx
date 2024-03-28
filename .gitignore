@@ -8,6 +8,7 @@
 bin/
 gen
 out/
+build
 
 # Project files
 .idea
